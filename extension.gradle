@@ -1,0 +1,23 @@
+ext {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    baseUrl = properties.getProperty('baseUrl', "\"\"")
+
+    versionCode = 1
+    versionName = '1.0.0'
+
+    minSdkVersion = 14
+    targetSdkVersion = 26
+    compileSdkVersion = 26
+
+    supportLibraryVersion = '26.1.0'
+
+    junitVersion = '4.12'
+    runnerVersion = '1.0.1'
+    espressoVersion = '3.0.1'
+
+    okHttp3Version = '3.9.0'
+    retrofitVersion = '2.3.0'
+    gsonVersion = '2.8.0'
+    glideVersion = '4.3.1'
+}
